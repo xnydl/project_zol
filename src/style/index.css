@@ -1,0 +1,388 @@
+.header-wrap, .logo-wrap {
+  width: 1190px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid red;
+  overflow: hidden; }
+
+.header-nav-left span, .header-nav-right span, .head-mid-search-list span {
+  font-size: 0;
+  margin: 0 10px;
+  color: #d3ccd3;
+  display: inline-block;
+  height: 10px;
+  width: 1px;
+  background: #d3ccd3;
+  vertical-align: middle; }
+
+.body {
+  background: #f4f4f4; }
+
+.header {
+  width: 100%; }
+
+.header-nav-left {
+  float: left; }
+
+.header-nav-left a {
+  font-size: 12px;
+  color: #474747; }
+
+.header-nav-right {
+  float: right; }
+
+.header-nav-right a {
+  font-size: 12px;
+  color: #474747; }
+
+.header-logo-lf {
+  float: left;
+  width: 329px;
+  height: 58px;
+  background: url(../images/logo.34b1b031.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 32px 15px 0 0; }
+
+.header-logo-mid {
+  height: 58px;
+  margin: 30px 0 0 80px;
+  float: left; }
+
+.head-logo-mid-search {
+  width: 600px;
+  height: 38px;
+  position: relative;
+  margin-bottom: 4px; }
+
+.search-pic {
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  color: red; }
+
+.head-mid-search {
+  width: 480px;
+  border: 2px solid #fd4165;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  height: 30px;
+  padding: 2px 8px 2px 34px; }
+
+.header-logo-mid-but {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 74px;
+  height: 38px;
+  background-color: red;
+  border-radius: 0 20px 20px 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 0;
+  line-height: 38px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center; }
+
+.head-mid-search-list a {
+  font-size: 12px;
+  color: #474747; }
+
+.header-logo-rg {
+  float: right;
+  width: 80px;
+  height: 80px;
+  margin: 17px 0 0; }
+
+.banner {
+  width: 100%;
+  background: #fc002d;
+  height: 35px; }
+
+.banner-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 35px;
+  display: flex;
+  justify-content: space-around; }
+
+.main-nav-list-a {
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  color: #fff; }
+
+.main-nav-list-a a {
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  color: #fff; }
+
+.main-nav-list-b {
+  width: 115px;
+  z-index: 10000;
+  top: 35px;
+  left: 0;
+  background: #df022d;
+  display: none;
+  padding: 2px 0; }
+
+.main-wrap {
+  width: 1190px;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex; }
+
+.main-banner-left {
+  width: 230px;
+  height: 400px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.main-banner-left-li {
+  font-size: 13px;
+  color: #333;
+  cursor: default; }
+
+.main-banner-left-icon_0 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat 0px; }
+
+.main-banner-left-icon_1 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -20px; }
+
+.main-banner-left-icon_2 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -40px; }
+
+.main-banner-left-icon_3 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -60px; }
+
+.main-banner-left-icon_4 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -80px; }
+
+.main-banner-left-icon_5 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -100px; }
+
+.main-banner-left-icon_6 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -120px; }
+
+.main-banner-left-icon_7 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -140px; }
+
+.main-banner-left-icon_8 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -160px; }
+
+.main-banner-left-icon_9 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -180px; }
+
+.main-banner-left-icon_10 {
+  float: left;
+  margin: 8px 9px 0 -18px;
+  width: 17px;
+  height: 18px;
+  background: url(../images/liebiao.png) no-repeat -200px; }
+
+.main-banner-mid {
+  width: 730px;
+  height: 390px;
+  border: 1px solid red; }
+
+.main-banner-right {
+  width: 220px;
+  height: 380px;
+  border: 1px solid red; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+textarea,
+input {
+  margin: 0;
+  padding: 0; }
+
+address,
+cite,
+dfn,
+em,
+var,
+i {
+  font-style: normal; }
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Microsoft Yahei', 'simsun', 'arial', 'tahoma';
+  color: #333; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  font-size: 100%;
+  font-weight: normal; }
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%; }
+
+fieldset,
+img {
+  border: 0; }
+
+a,
+img {
+  -webkit-touch-callout: none; }
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none; }
+
+input[type=password],
+input[type=text],
+textarea {
+  resize: none;
+  outline: 0;
+  -webkit-appearance: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: #fff; }
+
+ul,
+ol {
+  list-style: none; }
+
+:focus {
+  outline: none; }
+
+.clearfix {
+  clear: both;
+  content: "";
+  display: block;
+  overflow: hidden; }
+
+.clear {
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/*# sourceMappingURL=index.css.map */

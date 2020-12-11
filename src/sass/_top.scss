@@ -1,0 +1,268 @@
+//高度
+$box_height: 200px;
+//宽度
+$page_width: 100%;
+$box_width: 1190px;
+//颜色
+$col47:#474747;
+$cold3c:#d3ccd3;
+//边框
+$box_border:1px solid red;
+//字体大小
+$font12:12px;
+//margin
+$mar10:0px 10px;
+//公共样式
+%size {
+    width: $box_width;
+    height: $box_height;
+    margin: 0 auto;
+    border: $box_border;
+    overflow: hidden;
+}
+
+//头部span的公共样式
+%head-span {
+    font-size: 0;
+    margin: 0 10px;
+    color: #d3ccd3;
+    display: inline-block;
+    height: 10px;
+    width: 1px;
+    background: #d3ccd3;
+    vertical-align: middle;
+}
+
+//主体导航版心list
+%main-nav-list {
+    float: left;
+    width: 115px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+//body
+.body {
+    background: #f4f4f4;
+}
+
+// 头部
+.header {
+    width: $page_width;
+}
+
+//头部版心
+.header-wrap {
+    @extend %size;
+}
+
+//头部导航左半部分
+.header-nav-left {
+    float: left;
+}
+
+//头部导航左半部分文字
+.header-nav-left a {
+    font-size: $font12;
+    color: $col47;
+}
+
+//头部导航左半部分文字span
+.header-nav-left span {
+    @extend %head-span;
+}
+
+//头部导航右半部分
+.header-nav-right {
+    float: right;
+}
+
+//头部导航右半部分文字
+.header-nav-right a {
+    font-size: $font12;
+    color: $col47;
+}
+
+// 头部右半部分span
+.header-nav-right span {
+    @extend %head-span;
+}
+
+//头部log和搜索栏部分
+.logo-wrap {
+    @extend %size;
+}
+
+// 左半部分logo
+.header-logo-lf {
+    float: left;
+    width: 329px;
+    height: 58px;
+    background: url(../images/logo.34b1b031.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 32px 15px 0 0;
+}
+
+//中间部分搜索
+.header-logo-mid {
+    height: 58px;
+    margin: 30px 0 0 80px;
+    float: left;
+}
+
+//搜索栏
+.head-logo-mid-search {
+    width: 600px;
+    height: 38px;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.search-pic {
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    color: red;
+}
+
+.head-mid-search {
+    width: 480px;
+    border: 2px solid #fd4165;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    height: 30px;
+    padding: 2px 8px 2px 34px;
+}
+
+.header-logo-mid-but {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 74px;
+    height: 38px;
+    background-color: red;
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 0;
+    line-height: 38px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.head-mid-search-list a {
+    font-size: $font12;
+    color: $col47;
+}
+
+.head-mid-search-list span {
+    @extend %head-span;
+}
+
+//右半部分二维码
+.header-logo-rg {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin: 17px 0 0;
+}
+
+//导航列表项
+.banner {
+    width: 100%;
+    background: #fc002d;
+    height: 35px;
+}
+
+.banner-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav-list-a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.main-nav-list-a a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+
+// 二级菜单
+.main-nav-list-b {
+    width: 115px;
+    z-index: 10000;
+    top: 35px;
+    left: 0;
+    background: #df022d;
+    display: none;
+    padding: 2px 0;
+}
+
+//主体
+.main-wrap {
+    width: $box_width;
+    // height: $box_height;
+    margin: 0 auto;
+    border: $box_border;
+    display: flex;
+}
+
+//主体左边导航
+.main-banner-left {
+    width: 230px;
+    height: 400px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+//左导航li标签
+.main-banner-left-li {
+    font-size: 13px;
+    color: #333;
+    cursor: default;
+}
+
+//左导航li标签里的小图标
+@for $i from 0 through 10 {
+    .main-banner-left-icon_#{$i} {
+        float: left;
+        margin: 8px 9px 0 -18px;
+        width: 17px;
+        height: 18px;
+        background: url(../images/liebiao.png) no-repeat 0px -$i*20px;
+    }
+}
+
+//主体中间导航
+.main-banner-mid {
+    width: 730px;
+    height: 390px;
+    border: 1px solid red;
+}
+
+//主体右边导航
+.main-banner-right {
+    width: 220px;
+    height: 380px;
+    border: 1px solid red;
+}
