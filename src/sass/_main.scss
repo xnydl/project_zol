@@ -1,0 +1,254 @@
+//高度
+$box_height: 200px;
+//宽度
+$page_width: 100%;
+$box_width: 1190px;
+//颜色
+$col47:#474747;
+$cold3c:#d3ccd3;
+//边框
+$box_border:1px solid red;
+//字体大小
+$font12:12px;
+//margin
+$mar10:0px 10px;
+//公共样式
+%size {
+    width: $box_width;
+    // height: $box_height;
+    margin: 0 auto;
+    border: $box_border;
+    overflow: hidden;
+}
+
+//头部span的公共样式
+%head-span {
+    font-size: 0;
+    margin: 0 10px;
+    color: #d3ccd3;
+    display: inline-block;
+    height: 10px;
+    width: 1px;
+    background: #d3ccd3;
+    vertical-align: middle;
+}
+
+//主体导航版心list
+%main-nav-list {
+    float: left;
+    width: 115px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+//小图标样式
+%lf-ic {
+    float: left;
+    margin: 8px 9px 0 -18px;
+    width: 36px;
+    height: 30px;
+}
+
+.main-nav-list-a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.main-nav-list-a a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+
+// 二级菜单
+.main-nav-list-b {
+    width: 115px;
+    z-index: 10000;
+    top: 35px;
+    left: 0;
+    background: #df022d;
+    display: none;
+    padding: 2px 0;
+}
+
+//主体
+.main-wrap {
+    width: $box_width;
+    // height: $box_height;
+    margin: 0 auto;
+    border: $box_border;
+    display: flex;
+}
+
+//主体左边导航
+.main-banner-left {
+    width: 230px;
+    height: 400px;
+    border: 1px solid red;
+    // justify-content: space-around;
+}
+
+.main-banner-left-ul {
+    vertical-align: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+//左导航li标签
+.main-banner-left-li {
+    font-size: 13px;
+    color: #333;
+    // cursor: default;
+}
+
+.main-banner-left-li-sp1 {
+    line-height: 36px;
+    height: 36px;
+    text-align: center;
+}
+
+//左导航li标签里的小图标
+.main-banner-left-icon_0 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px 3px;
+}
+
+.main-banner-left-icon_1 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -30px;
+}
+
+.main-banner-left-icon_2 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -63px;
+}
+
+.main-banner-left-icon_3 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -98px;
+}
+
+.main-banner-left-icon_4 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -132px;
+}
+
+.main-banner-left-icon_5 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -166px;
+}
+
+.main-banner-left-icon_6 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -200px;
+}
+
+.main-banner-left-icon_7 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -234px;
+}
+
+.main-banner-left-icon_8 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -268px;
+}
+
+.main-banner-left-icon_9 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -301px;
+}
+
+.main-banner-left-icon_10 {
+    @extend %lf-ic;
+    background: url(../images/liebiao.png) no-repeat 20px -337px;
+}
+
+//主体中间导航
+.main-banner-mid {
+    width: 730px;
+    height: 390px;
+    border: 1px solid red;
+}
+
+//主体右边导航
+.main-banner-right {
+    width: 220px;
+    height: 380px;
+    border: 1px solid red;
+}
+
+.main-banner-rig-top-tit {
+    width: 218px;
+    height: 34.4px;
+    color: red;
+    text-align: center;
+    line-height: 34.4px;
+}
+
+.main-rg-logn {
+    width: 197px;
+    height: 30px;
+    background: #fff;
+    margin: 15px 0 0;
+    border: 1px solid #e5e5e5;
+    padding-left: 11px;
+    font-size: 12px;
+}
+
+// 登录按钮
+.main-rg-logn-b {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 32px;
+    margin-top: 10px;
+    width: 197px;
+    height: 32px;
+    background-blend-mode: normal, normal;
+    border-radius: 16px;
+    border: 1px solid #fd4065;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 14px;
+}
+
+// 忘记密码
+.main-rg-forget {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #474747;
+}
+
+.main-rg-forget a {
+    color: #474747;
+}
+
+// 下方四张小图
+.main-rg-log-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-rg-log-pic a {
+    // width: 172px;
+    height: 24px;
+    color: #333;
+    margin: 0 0 16px;
+    font-size: 14px;
+}
+
+.main-rg-log-pic-b {
+    margin: -6px 14px;
+}

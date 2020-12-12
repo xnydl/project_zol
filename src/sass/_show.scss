@@ -1,0 +1,78 @@
+// 展示区
+// 展示区版心
+.show-wrap {
+    @extend %size;
+    display: flex;
+}
+
+// 展示区左半部分
+.show-lf {
+    width: 230px;
+    height: 523px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.show-lf-sp {
+    position: absolute;
+    left: 60px;
+    top: 57px;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+}
+
+//展示区右半部分
+.show-rg {
+    width: 960px;
+    height: 523px;
+    border: 1px solid red;
+}
+
+.show-rg-ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.show-rg-ul-li {
+    border: 1px solid red;
+    width: 230px;
+    height: 255px;
+    background: #fff;
+    // cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // align-items: center;
+    text-align: center;
+}
+
+.show-rg-ul-li-img {
+    width: 160px;
+    height: 120px;
+}
+
+.show-rg-ul-li-p {
+    margin: 15px 0 0;
+}
+
+.s-r-p1 {
+    font-size: 14px;
+    color: #333;
+    line-height: 17px;
+    width: 183px;
+    height: 35px;
+    margin: 21px auto 0;
+    text-align: center;
+}
+
+.s-r-p2 {
+    width: 100%;
+    height: 12px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #f33;
+    margin: 15px auto 0;
+    text-align: center;
+}

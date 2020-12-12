@@ -1,0 +1,46 @@
+// 尾部
+.fot {
+    width: 100%;
+    background: #302e2e;
+    height: 140px;
+}
+
+.fot-wrap {
+    @extend %size;
+    height: 140px;
+    // padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    color: #f8f8f8;
+    font-size: 14px;
+}
+
+.fot-lf {
+    border: 1px solid red;
+    width: 1100px;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.fot-rg {
+    border: 1px solid red;
+    width: 100px;
+    height: 140px;
+}
+
+.fot-lf-box-a-sp1 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.fot-lf-pic {
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+.fot-rg-pic {
+    margin-top: 20px;
+}

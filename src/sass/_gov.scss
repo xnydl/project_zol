@@ -1,0 +1,32 @@
+// 政府采购
+.g-s-wrap {
+    @extend %size;
+}
+
+.g-s-wrap-ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.g-s-wrap-li {
+    border: 1px solid red;
+    width: 291px;
+    height: 150px;
+}
+
+.g-s-wrap-li-pic {
+    width: 291px;
+    height: 74.61px;
+}
+
+.g-s-tit {
+    width: 100%;
+    height: 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 50px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #333;
+}

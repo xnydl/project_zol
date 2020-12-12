@@ -1,0 +1,48 @@
+@import 'head';
+// 版心宽度
+// $box_width: 1190px;
+//边框
+$box_border:1px solid red;
+// 版心公有格式
+%wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 35px;
+    display: flex;
+    // justify-content: space-around;
+    border: $box_border;
+    align-items: center;
+}
+
+// 版头版心
+.main-log-wrap {
+    @extend %wrap;
+    height: 100px;
+}
+
+// logo
+.main-logo-pic {
+    width: 329px;
+    height: 58px;
+    margin: 32px 15px 0 0;
+}
+
+.main-log-tit {
+    color: #3e3a39;
+    font-size: 16px;
+    margin-top: 33px;
+    height: 30px;
+    line-height: 30px;
+    border-left: 1px solid #ededed;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+
+// 注册部分
+.main-reg-wrap {
+    width: 980px;
+    height: 356.8px;
+    display: flex;
+    flex-direction: column;
+}
