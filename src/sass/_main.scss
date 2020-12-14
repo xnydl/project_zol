@@ -7,7 +7,7 @@ $box_width: 1190px;
 $col47:#474747;
 $cold3c:#d3ccd3;
 //边框
-$box_border:1px solid red;
+// $box_border:1px solid red;
 //字体大小
 $font12:12px;
 //margin
@@ -17,7 +17,6 @@ $mar10:0px 10px;
     width: $box_width;
     // height: $box_height;
     margin: 0 auto;
-    border: $box_border;
     overflow: hidden;
 }
 
@@ -58,6 +57,7 @@ $mar10:0px 10px;
     line-height: 35px;
     font-size: 16px;
     color: #fff;
+    // display: none;
 }
 
 .main-nav-list-a a {
@@ -67,6 +67,14 @@ $mar10:0px 10px;
     color: #fff;
 }
 
+.main-nav-list-c {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    display: none;
+}
+
 // 二级菜单
 .main-nav-list-b {
     width: 115px;
@@ -74,8 +82,7 @@ $mar10:0px 10px;
     top: 35px;
     left: 0;
     background: #df022d;
-    display: none;
-    padding: 2px 0;
+    // padding: 2px 0;
 }
 
 //主体
@@ -83,16 +90,15 @@ $mar10:0px 10px;
     width: $box_width;
     // height: $box_height;
     margin: 0 auto;
-    border: $box_border;
+    //////
     display: flex;
+    justify-content: space-between;
 }
 
 //主体左边导航
 .main-banner-left {
     width: 230px;
     height: 400px;
-    border: 1px solid red;
-    // justify-content: space-around;
 }
 
 .main-banner-left-ul {
@@ -102,87 +108,117 @@ $mar10:0px 10px;
     justify-content: space-between;
 }
 
-//左导航li标签
-.main-banner-left-li {
-    font-size: 13px;
-    color: #333;
-    // cursor: default;
+.menu {
+    width: 230px;
+    height: 400px;
 }
 
-.main-banner-left-li-sp1 {
-    line-height: 36px;
-    height: 36px;
-    text-align: center;
-}
-
-//左导航li标签里的小图标
-.main-banner-left-icon_0 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px 3px;
-}
-
-.main-banner-left-icon_1 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -30px;
-}
-
-.main-banner-left-icon_2 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -63px;
-}
-
-.main-banner-left-icon_3 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -98px;
-}
-
-.main-banner-left-icon_4 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -132px;
-}
-
-.main-banner-left-icon_5 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -166px;
-}
-
-.main-banner-left-icon_6 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -200px;
-}
-
-.main-banner-left-icon_7 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -234px;
-}
-
-.main-banner-left-icon_8 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -268px;
-}
-
-.main-banner-left-icon_9 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -301px;
-}
-
-.main-banner-left-icon_10 {
-    @extend %lf-ic;
-    background: url(../images/liebiao.png) no-repeat 20px -337px;
+.menu li {
+    padding-left: 40px;
+    background: url(../images/liebiao.png) no-repeat 10px 12px;
+    // width: 230px;
+    height: 38px;
+    line-height: 38px;
 }
 
 //主体中间导航
 .main-banner-mid {
     width: 730px;
     height: 390px;
-    border: 1px solid red;
+    position: relative;
+}
+
+//main中间的轮播图
+.lunbo {
+    width: 730px;
+    height: 390px;
+    // margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.lunbo ul {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.lunbo ul li {
+    float: left;
+}
+
+.lunbo ol {
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+
+.lunbo ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    text-indent: -999em;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.lunbo ol li.active-lunbo {
+    background: blue;
+}
+
+#left,
+#right {
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    color: #fff;
+    font-size: 100px;
+    text-decoration: none;
+    display: none;
+}
+
+#left {
+    left: 20px;
+}
+
+#right {
+    right: 20px;
+}
+
+//main中间的二级盒子
+.lvsecbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item {
+    width: 730px;
+    height: 390px;
+    display: none;
+    position: absolute;
+    left: -20px;
+    background-color: #333;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+    transition: top 0.3s ease;
+    a {
+        width: 100px;
+        height: 20px;
+        z-index: 2;
+    }
+}
+
+//左边一级盒子点击效果
+.active {
+    background-color: #fd4065;
 }
 
 //主体右边导航
 .main-banner-right {
     width: 220px;
     height: 380px;
-    border: 1px solid red;
 }
 
 .main-banner-rig-top-tit {

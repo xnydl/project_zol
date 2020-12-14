@@ -1,5 +1,6 @@
 @import 'head';
 @import 'fot';
+@import 'public';
 // 版心宽度
 // $box_width: 1190px;
 //边框
@@ -14,13 +15,4 @@
     // justify-content: space-around;
     // border: $box_border;
     // align-items: center;
-}
-
-// 注册部分
-.main-reg-wrap {
-    width: 980px;
-    height: 356.8px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
 }

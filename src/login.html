@@ -5,17 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/login.css">
 </head>
 
 <body>
-    <fieldset style="width:500px;margin:0 auto;">
-        <legend>用户登录</legend>
-        <form action="" method="post">
-            <p><label for="">用户名：</label><input type="text" name="username" id="username"></p>
-            <p><label for="">密　码：</label><input type="password" name="password" id="password"></p>
-            <p><input type="button" value="登录" id="login"><a href="registry.html">立即注册</a></p>
-        </form>
-    </fieldset>
+    <!-- 头部 -->
+    <header class="header">
+        <!-- 头部版心 -->
+        <div class="header-wrap">
+            <!-- 头部导航左半部分 -->
+            <div class="header-nav-left">
+                <a href="http://www.zol.com.cn/" target="-blank">中关村在线</a><span>|</span>
+                <a href="https://www.zol.com/" target="-blank">ZOL企业购</a>
+                <a href="https://www.zol.com/solution/" target="-blank">解决方案馆</a><span>|</span>
+                <a href="https://www.zol.com/index/" target="-blank">中在指数</a><span>|</span>
+                <a href="https://www.zol.com/enterprise-join/" target="-blank">供应商入驻</a>
+            </div>
+            <!-- 头部导航右半部分 -->
+            <div class="header-nav-right">
+                <!-- 登录 -->
+                <a href="http://localhost/JS2010/project_zol/src/login.html">登录</a><span>|</span>
+                <!-- 注册 -->
+                <a href="http://localhost/JS2010/project_zol/src/registry.html">注册</a>
+            </div>
+        </div>
+        <!-- 版头版心 -->
+        <div class="main-log">
+            <div class="main-log-wrap">
+                <!-- logo -->
+                <div class="main-log-pic">
+                    <img src="./images/logo.34b1b031.png" alt="">
+                </div>
+                <!-- 文字标题 -->
+                <div class="main-log-tit">欢迎注册</div>
+
+            </div>
+        </div>
+    </header>
+    <main style="margin-top: 80px;">
+        <fieldset style="width:500px;margin:0 auto;">
+            <!-- <legend>用户登录</legend> -->
+            <form action="" method="post">
+                <p><label for="">用户名：</label><input type="text" name="username" id="username"></p>
+                <p><label for="">密　码：</label><input type="password" name="password" id="password"></p>
+                <p><input type="button" value="登录" id="login"><a href="registry.html">立即注册</a></p>
+            </form>
+        </fieldset>
+    </main>
+
+
+    <!-- 尾部 -->
+    <footer class="fot">
+        <!-- 尾部版心 -->
+        <div class="fot-wrap">
+            <!-- 尾部左半部分 -->
+            <div class="fot-lf">
+                <!-- 第一个盒子 -->
+                <div class="fot-lf-box-a">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADoElEQVRIiY2W309bdRjGP+f0tBBAsGWn4UeLyZq4SDvGjbBkRUZkAUuyxYtVaLwwS4xytXhh9D9QL0S9nsnihbqZTFMTMCGLNVmXGVJXKTgzMFoO5UDHWEscJQ3l1ItT6uFwij43bd7v8z7v+/3xvu8RotEox6ALiABDQDcgA3tABlgBfgJuAn/VEhBqBOgCPgTCgO24DACtEuR9QDEvihYOF4FFYOJ/iB9oTAC/VX6PDXAV+A54xkppf3+fcrlcK1AT8CXwjtEoGf6/BnwCCEZCPp/nbjzO0sOH5PN5RFFElmUCp0/T199PfX29kS4AHwMq+rFV76CrssUmI/vXZJKZ6Wle6O6mt7eXE7KMpmmsZTLMzc3xZGuL8UiEjo4O826eAn5AOdjBB2bx3x884IeZGSYiEYrFIolEgsebm9gkifb2dkZGRkin03xx/TpvTU7icrnMx/URMCFEo9HngD8x3EexWOTTqSlGQyEWUimWl5bMGSIIAueCQQDWMhneuHLFTNGAkyIwjumyk/fv43a7Sc3PW4oDlMtl4nfuAJDNZtlYXzdTRGBcRC+iKra3t0kmkwD8sbxsKQ7Q6fEA8PO9e7haW/n21i2UlRUzbUgEAkbLzPQ0G+vrpNPpmuJer5fL4TCSJFEqlcisrpLNZonFYmZqQAJOGC2FQsFSVJIk2tra8Hi9nAsGaW5uptvvJzU/X+WUSiWzmyyZLWb0nDlDcGAAWZYRxcN16fP5DgWwTAx4DHQeGBoaGg4RLl66hN1ut3R+1ukEwG63s7e3R2trq5myKaIXWBWhsTFeHh7mlVAIgJ2dnZrZlTUNSZJ4e3ISt9tNaGzMTFkUgR+NlpaWFl4aHKT/7FmeP3WKXxIJAFRVZWNjg1VF4W48DoCiKAyeP89OocBJnw+Hw2EOEBPRe4ZmXhEEgcvhME+2tniUzeJyuVhcWCCVSuEPBMjlcjgcDl7s6+P27CzBgQGzhAbcPOhFX6MXnCVyuRxOp5Pd3V3q6uoQRZFSqYSqqtyenWVkdLRaFwbcoNIqoEazM0JdW+Pza9fo9Hjwer2oqopblhkcGqKxsdFMP9LsFOBN4CtM7foANpsNm81GU1MTPT09DF+4cOTZVlCuaClwdGReBaawnnRomlZL1Cj+LvpMAAuhz4BXgb+tvP9D/CnwulHcKgDA9+j96QYWr8sCWoXrRz/iQ6jVKhT0Af4e/362+AF3Zf0R+qOIAd+gzxNL/APn7C0ZO+/X/AAAAABJRU5ErkJggg=="
+                        class="fot-lf-pic">
+                    <span class="fot-lf-box-a-sp1">热线 电话400-688-1999</span>
+                </div>
+                <!-- 第二个盒子 -->
+                <div class="fot-lf-box-b">
+                    <span class="fot-lf-box-a-sp1">©2020 北京知行锐景科技有限公司 / 北京中在云商科技有限公司 版权备案单位/子公司</span>
+                </div>
+                <!-- 第三个盒子 -->
+                <div class="fot-lf-box-c">
+                    <span class="fot-lf-box-a-sp1">京ICP证150096号京ICP备14061128号京公网安备11010802020026号网络文化经营许可证京网文[2016]1631-199增值电信业务经营许可证：京B2-20200543</span>
+                </div>
+            </div>
+            <!-- 尾部右半部分 -->
+            <div class="fot-rg">
+                <img src="https://icon.zol-img.com.cn/ucdn/b-zol-com/1.0.2/img/code.53fecea8.png" class="fot-rg-pic">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

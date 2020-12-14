@@ -17,7 +17,7 @@ $mar10:0px 10px;
     width: $box_width;
     // height: $box_height;
     margin: 0 auto;
-    border: $box_border;
+    //border: $box_border;
     overflow: hidden;
 }
 
@@ -190,4 +190,42 @@ $mar10:0px 10px;
     height: 35px;
     display: flex;
     justify-content: space-around;
+}
+
+// 版心公有格式
+%wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 35px;
+    display: flex;
+    // justify-content: space-around;
+    //border: $box_border;
+    // align-items: center;
+    margin-bottom: 40px;
+}
+
+// 注册登录界面的版心
+// 版头版心
+.main-log-wrap {
+    @extend %wrap;
+    height: 100px;
+}
+
+// logo
+.main-logo-pic {
+    width: 329px;
+    height: 58px;
+    margin: 32px 15px 0 0;
+}
+
+.main-log-tit {
+    color: #3e3a39;
+    font-size: 16px;
+    margin-top: 33px;
+    height: 30px;
+    line-height: 30px;
+    border-left: 1px solid #ededed;
+    padding-left: 15px;
+    margin-right: 20px;
 }
